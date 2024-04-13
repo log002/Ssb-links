@@ -1,0 +1,142 @@
+Here are some common Java interview questions along with their answers:
+
+1. **What is the difference between `==` and `.equals()` in Java?**
+   - `==` is used to compare primitive data types and memory addresses of objects, while `.equals()` is used to compare the contents of objects. For objects, `==` checks if they refer to the same memory location, whereas `.equals()` checks if their contents are equivalent.
+
+2. **Explain the difference between `ArrayList` and `LinkedList` in Java.**
+   - `ArrayList` is implemented as a resizable array, providing fast random access but slower insertion and deletion of elements. `LinkedList` is implemented as a doubly linked list, providing fast insertion and deletion but slower random access.
+
+3. **What is the difference between `HashMap` and `HashTable` in Java?**
+   - `HashMap` is not synchronized and allows null keys and values, while `HashTable` is synchronized and does not allow null keys or values. Additionally, `HashMap` is generally preferred for most use cases due to its better performance.
+
+4. **What is the difference between `interface` and `abstract class` in Java?**
+   - An `interface` defines a contract of methods that a class must implement, while an `abstract class` can contain abstract methods as well as concrete methods. A class can implement multiple interfaces but can only extend one abstract class.
+
+5. **What is the difference between `final`, `finally`, and `finalize` in Java?**
+   - `final` is a keyword used to apply restrictions on class, method, and variable. `finally` is a block used to execute important code such as closing resources, and it always executes whether an exception is handled or not. `finalize` is a method used for garbage collection, called by the garbage collector before reclaiming memory.
+
+6. **Explain the concept of multithreading in Java.**
+   - Multithreading allows concurrent execution of multiple threads within a single process. Threads share the same memory space and can run independently, allowing for tasks to be performed simultaneously. In Java, multithreading can be achieved by extending the `Thread` class or implementing the `Runnable` interface.
+
+7. **What is method overloading and method overriding in Java?**
+   - Method overloading is when multiple methods in the same class have the same name but different parameters. Method overriding is when a subclass provides a specific implementation of a method that is already defined in its superclass. Overloading is resolved at compile time, while overriding is resolved at runtime.
+
+Here are 20 more Java interview questions along with their answers:
+
+8. **What is the difference between `static` and `final` keywords in Java?**
+   - `static` is used to create class-level variables and methods that are shared across all instances of the class, while `final` is used to create constants that cannot be changed once initialized.
+
+9. **Explain the concept of inheritance in Java with an example.**
+   - Inheritance allows a class (subclass) to inherit properties and behaviors from another class (superclass). For example, a `Vehicle` class can be inherited by `Car` and `Motorcycle` classes, which will inherit common properties such as `speed` and `color`.
+
+10. **What are access modifiers in Java and how are they used?**
+    - Access modifiers control the visibility and accessibility of classes, methods, and variables. There are four types: `public`, `protected`, `default` (package-private), and `private`. They dictate which classes can access the member.
+
+11. **What is the purpose of the `super` keyword in Java?**
+    - The `super` keyword is used to call the constructor or methods of the superclass. It is often used to access superclass methods, constructors, and variables from a subclass.
+
+12. **Explain the concept of polymorphism in Java with an example.**
+    - Polymorphism allows objects of different classes to be treated as objects of a common superclass. For example, a `Bird` class and a `Dog` class can both inherit from an `Animal` superclass, and objects of both classes can be treated as `Animal` objects.
+
+13. **What is the difference between `throw` and `throws` keywords in Java exception handling?**
+    - `throw` is used to explicitly throw an exception within a method, while `throws` is used in the method signature to indicate that the method may throw certain types of exceptions, which must be handled by the caller.
+
+14. **What is the `this` keyword used for in Java?**
+    - The `this` keyword refers to the current instance of the class and can be used to access instance variables and methods. It is often used to disambiguate between instance variables and parameters with the same name.
+
+15. **Explain the difference between `String`, `StringBuffer`, and `StringBuilder` classes in Java.**
+    - `String` is immutable and cannot be changed once created. `StringBuffer` is synchronized and mutable, suitable for multi-threaded environments. `StringBuilder` is similar to `StringBuffer` but not synchronized, offering better performance in single-threaded environments.
+
+16. **What is the difference between checked and unchecked exceptions in Java?**
+    - Checked exceptions are checked at compile-time, and the programmer must handle or declare them using the `throws` clause. Unchecked exceptions are not checked at compile-time and typically represent programming errors, such as `NullPointerException` or `ArrayIndexOutOfBoundsException`.
+
+17. **Explain the concept of method chaining in Java with an example.**
+    - Method chaining involves calling multiple methods on the same object in a single line, where each method returns the object itself. For example, `StringBuilder sb = new StringBuilder().append("Hello").append(" ").append("World");`
+
+18. **What is the difference between `break` and `continue` statements in Java?**
+    - `break` is used to exit a loop or switch statement prematurely, while `continue` is used to skip the remaining code in a loop and proceed to the next iteration.
+
+19. **What is the purpose of the `transient` keyword in Java?**
+    - The `transient` keyword is used to indicate that a variable should not be serialized when the object is serialized. It is often used for sensitive data or non-serializable resources.
+
+20. **Explain the concept of method overriding rules in Java.**
+    - When overriding a method in a subclass, the method signature (name and parameters) must match exactly with the method in the superclass. The access level cannot be more restrictive, and the return type must be compatible. The method in the subclass should also respect the same or broader exception hierarchy.
+
+21. **What is the difference between `abstract class` and `interface` in Java?**
+    - An abstract class can have both abstract and concrete methods, while an interface can only have abstract methods. Additionally, a class can implement multiple interfaces but can only extend one abstract class.
+
+22. **Explain the concept of the `equals()` method in Java and why it's important to override it.**
+    - The `equals()` method is used to compare the contents of objects for equality. It is important to override it to provide a meaningful comparison based on the object's state rather than its memory address. This is crucial for collections like `HashSet` and `HashMap` to work correctly.
+
+23. **What is the purpose of the `instanceof` operator in Java?**
+    - The `instanceof` operator is used to check if an object is an instance of a particular class or interface. It returns `true` if the object is an instance of the specified type or any of its subclasses, otherwise `false`.
+
+24. **Explain the difference between `Array` and `ArrayList` in Java.**
+    - An `Array` is a fixed-size data structure with a contiguous block of memory allocated for its elements, while an `ArrayList` is a dynamic array that can grow or shrink in size dynamically. `ArrayList` provides more flexibility and convenience methods compared to plain arrays.
+
+25. **What is the purpose of the `finalize()` method in Java?**
+    - The `finalize()` method is called by the garbage collector before reclaiming an object's memory. It can be overridden to perform cleanup operations or release resources associated with the object before it is garbage collected, though it's generally recommended to use explicit resource management instead.
+
+Here are the questions along with their answers:
+
+1. **What is the difference between `==` and `.equals()` in Java?**
+   - `==` is used to compare primitive data types and memory addresses of objects, while `.equals()` is used to compare the contents of objects. For objects, `==` checks if they refer to the same memory location, whereas `.equals()` checks if their contents are equivalent.
+
+2. **Explain the difference between `ArrayList` and `LinkedList` in Java.**
+   - `ArrayList` is implemented as a resizable array, providing fast random access but slower insertion and deletion of elements. `LinkedList` is implemented as a doubly linked list, providing fast insertion and deletion but slower random access.
+
+3. **What is the difference between `HashMap` and `HashTable` in Java?**
+   - `HashMap` is not synchronized and allows null keys and values, while `HashTable` is synchronized and does not allow null keys or values. Additionally, `HashMap` is generally preferred for most use cases due to its better performance.
+
+4. **What is the difference between `interface` and `abstract class` in Java?**
+   - An `interface` defines a contract of methods that a class must implement, while an `abstract class` can contain abstract methods as well as concrete methods. A class can implement multiple interfaces but can only extend one abstract class.
+
+5. **What is the difference between `final`, `finally`, and `finalize` in Java?**
+   - `final` is a keyword used to apply restrictions on class, method, and variable. `finally` is a block used to execute important code such as closing resources, and it always executes whether an exception is handled or not. `finalize` is a method used for garbage collection, called by the garbage collector before reclaiming memory.
+
+6. **Explain the concept of multithreading in Java.**
+   - Multithreading allows concurrent execution of multiple threads within a single process. Threads share the same memory space and can run independently, allowing for tasks to be performed simultaneously. In Java, multithreading can be achieved by extending the `Thread` class or implementing the `Runnable` interface.
+
+7. **What is method overloading and method overriding in Java?**
+   - Method overloading is when multiple methods in the same class have the same name but different parameters. Method overriding is when a subclass provides a specific implementation of a method that is already defined in its superclass. Overloading is resolved at compile time, while overriding is resolved at runtime.
+
+8. **What is the difference between `static` and `final` keywords in Java?**
+   - `static` is used to create class-level variables and methods that are shared across all instances of the class, while `final` is used to create constants that cannot be changed once initialized.
+
+9. **Explain the concept of inheritance in Java with an example.**
+   - Inheritance allows a class (subclass) to inherit properties and behaviors from another class (superclass). For example, a `Vehicle` class can be inherited by `Car` and `Motorcycle` classes, which will inherit common properties such as `speed` and `color`.
+
+10. **What are access modifiers in Java and how are they used?**
+    - Access modifiers control the visibility and accessibility of classes, methods, and variables. There are four types: `public`, `protected`, `default` (package-private), and `private`. They dictate which classes can access the member.
+
+11. **What is the purpose of the `super` keyword in Java?**
+    - The `super` keyword is used to call the constructor or methods of the superclass. It is often used to access superclass methods, constructors, and variables from a subclass.
+
+12. **Explain the concept of polymorphism in Java with an example.**
+    - Polymorphism allows objects of different classes to be treated as objects of a common superclass. For example, a `Bird` class and a `Dog` class can both inherit from an `Animal` superclass, and objects of both classes can be treated as `Animal` objects.
+
+13. **What is the difference between `throw` and `throws` keywords in Java exception handling?**
+    - `throw` is used to explicitly throw an exception within a method, while `throws` is used in the method signature to indicate that the method may throw certain types of exceptions, which must be handled by the caller.
+
+14. **What is the `this` keyword used for in Java?**
+    - The `this` keyword refers to the current instance of the class and can be used to access instance variables and methods. It is often used to disambiguate between instance variables and parameters with the same name.
+
+15. **Explain the difference between `String`, `StringBuffer`, and `StringBuilder` classes in Java.**
+    - `String` is immutable and cannot be changed once created. `StringBuffer` is synchronized and mutable, suitable for multi-threaded environments. `StringBuilder` is similar to `StringBuffer` but not synchronized, offering better performance in single-threaded environments.
+
+16. **What is the difference between checked and unchecked exceptions in Java?**
+    - Checked exceptions are checked at compile-time, and the programmer must handle or declare them using the `throws` clause. Unchecked exceptions are not checked at compile-time and typically represent programming errors, such as `NullPointerException` or `ArrayIndexOutOfBoundsException`.
+
+17. **Explain the concept of method chaining in Java with an example.**
+    - Method chaining involves calling multiple methods on the same object in a single line, where each method returns the object itself. For example, `StringBuilder sb = new StringBuilder().append("Hello").append(" ").append("World");`
+
+18. **What is the difference between `break` and `continue` statements in Java?**
+    - `break` is used to exit a loop or switch statement prematurely, while `continue` is used to skip the remaining code in a loop and proceed to the next iteration.
+
+19. **What is the purpose of the `transient` keyword in Java?**
+    - The `transient` keyword is used to indicate that a variable should not be serialized when the object is serialized. It is often used for sensitive data or non-serializable resources.
+
+20. **Explain the concept of method overriding rules in Java.**
+    - When overriding a method in a subclass, the method signature (name and parameters) must match exactly with the method in the superclass. The access level cannot be more restrictive, and the return type must be compatible. The method in the subclass should also respect the same or broader exception hierarchy.
+
+These questions and answers cover a wide range of Java concepts that are commonly asked in interviews. Let me know if you need further clarification on any of them!
